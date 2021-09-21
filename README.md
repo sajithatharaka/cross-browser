@@ -20,3 +20,4 @@ This repo is on - How to support multiple browsers in your test framework.
 
 ## Technical explanation
 https://sajithatharaka.medium.com/how-to-support-multiple-browsers-in-your-test-framework-part-i-592e7d87c193
+https://sajithatharaka.medium.com/easy-way-to-implement-cross-browser-support-in-your-automation-framework-fcd0eb387710
