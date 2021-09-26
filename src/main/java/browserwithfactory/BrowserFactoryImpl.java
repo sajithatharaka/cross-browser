@@ -34,12 +34,20 @@ public class BrowserFactoryImpl implements BrowserFactory {
         WebDriver driver = new EdgeDriver(options);
         return driver;
     };
+
+    private Supplier<WebDriver> safariDriver = () -> {
+        WebDriver driver=WebDriverManager.safaridriver().browserInDocker().create();
+        return driver;
+    };
+
+
     private Map<String, Supplier<WebDriver>> driverMap = new HashMap<>();
 
     public BrowserFactoryImpl() {
         driverMap.put("chrome", chromeDriver);
         driverMap.put("firefox", firefoxDriver);
         driverMap.put("edge", edgeDriver);
+        driverMap.put("safari", safariDriver);
 
     }
 

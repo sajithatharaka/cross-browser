@@ -1,5 +1,6 @@
 package browserwithfactory;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
@@ -17,8 +18,9 @@ public class CrossBrowserWithSimplifiedFactory {
     }
 
     @Test
-    public void edgeBrowserTest(){
-        WebDriver driver=new BrowserFactoryImpl().createDriver("edge");
+    public void safariBrowserTest(){
+        WebDriver driver=new BrowserFactoryImpl().createDriver("safari");
         driver.get("https://google.com");
     }
+
 }

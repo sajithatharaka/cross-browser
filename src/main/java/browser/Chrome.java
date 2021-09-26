@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 class Chrome implements IBrowser {
     public WebDriver createInstance() {
-        WebDriverManager.chromedriver().setup();;
+        WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
     }
 }
