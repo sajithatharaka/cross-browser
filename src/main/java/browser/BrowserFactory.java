@@ -14,6 +14,8 @@ public class BrowserFactory {
               driver=new Edge().createInstance();
           }else if("firefox".equals(browser.trim())){
               driver=new Firefox().createInstance();
+          }else if("safari".equals(browser.trim())){
+              driver=new Safari().createInstance();
           }else {
               throw new BrowserException(browser+" is not supported");
           }
